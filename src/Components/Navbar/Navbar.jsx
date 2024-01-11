@@ -17,6 +17,8 @@ const Navbar = () => {
 
   const [activeNav, setActiveNav] = useState('#')
 
+  const [isNavShow, setIsNavShow] = useState(false)
+
   return (
 
     <header>
@@ -24,23 +26,23 @@ const Navbar = () => {
         <div className="nav-container container" id="header">
 
             <div className="logo" id='#'>
-                <img src={logowhite} width='45rem' height='45rem' h alt="Logo for the website" /> 
+                <img src={logowhite} width='45rem' height='45rem'  alt="Logo for the website" /> 
               
             </div>
           
-            <div className="nav-links">        
-                <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome className='nav-icon' />Home</a>
-                <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser className='nav-icon' />About</a>
+            <div className={`nav-link ${isNavShow ? 'show-nav' : 'hide-nav'}`}>        
+                <li><a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome className='nav-icon' />Home</a></li>
+                <li><a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser className='nav-icon' />About</a></li>
                 
-                <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine className='nav-icon' />Services</a>
-                <a href="#catalogue" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><BsFillCollectionPlayFill className='nav-icon' />Catalogue</a>
-                <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail className='nav-icon' />Contact</a>
+                <li><a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine className='nav-icon' />Services</a></li>
+                <li><a href="#catalogue" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><BsFillCollectionPlayFill className='nav-icon' />Catalogue</a></li>
+                <li><a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail className='nav-icon' />Contact</a></li>
           
             </div>
 
-            <div className="nav-toggle" >
+            <button className="nav-toggle" onClick={() => setIsNavShow(!isNavShow)}>
                 <FaBarsStaggered id='menu-bar'/>                
-            </div>
+            </button>
         </div>
 
     </header>    
