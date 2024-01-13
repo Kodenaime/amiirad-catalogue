@@ -27,29 +27,29 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>get in touch</h5>
-      <h2>Contact</h2>
+      {/* <h5>get in touch</h5> */}
+      <h2 className='section__title'>Contact</h2>
 
-      <div className="container contact-container">
+      <div className="wrapper contact-container">
 
         <div className="contact-left">
           <article className="contact">
             <MdMarkEmailRead className='contact-icon'/>
             <h4>Email</h4>
-            <h5>creativedannyk@gmail.com</h5>
-            <a href="mailto:creativedannyk@gmail.com" target='_blank' rel="noreferrer">Send a messge</a>
+            <h5>amiirad.fashion@gmail.com</h5>
+            <a href="mailto:amiirad.fashion@gmail.com" target='_blank' rel="noreferrer">Send a messge</a>
           </article>
-          <article className="contact">
+          {/* <article className="contact">
             <FaLinkedin className='contact-icon'/>
             <h4>Linkedin</h4>
             <h5>Ekechukwu Daniel</h5>
             <a href="" target='_blank' rel="noreferrer">Send a messge</a>
-          </article>
+          </article> */}
           <article className="contact">
             <FaSquareWhatsapp className='contact-icon'/>
             <h4>Whatsapp</h4>
-            <h5>Ekechukwu Daniel</h5>
-            <a href="https://api.whatsapp.com/send?phone=+2348068564195" target='_blank' rel="noreferrer">Send a messge</a>
+            <h5>Amirad Fashion</h5>
+            <a href="https://api.whatsapp.com/send?phone=+09032198831" target='_blank' rel="noreferrer">Send a messge</a>
           </article>
         </div>
         

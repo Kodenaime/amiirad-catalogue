@@ -1,8 +1,10 @@
-.container.contact-container {
-    width: 58%;
+.wrapper.contact-container {
+    /* width: 58%; */
     display: grid;
     grid-template-columns: 30% 58%;
-    gap: 12%;
+    row-gap: 7.5rem;
+    background: hsl(0,0%,88%);
+    padding: 5rem;
 }
 
 .contact-left {
@@ -12,17 +14,17 @@
 }
 
 .contact {
-    background: var(--new-color);
+    background: transparent;
     padding: 1.1rem;
     border-radius: 1rem;
     text-align: center;
-    border: 1px solid transparent;
+    border: 1px solid var(--color-primary);
     transition: var(--transition);
 }
 
 .contact:hover {
-    background: transparent;
-    border-color: var(--primary-color);
+    background: var(--color-primary);
+    transform: scale(1.2);
 }
 
 .contact-icon {
@@ -52,14 +54,14 @@ input, textarea {
     border-radius: 0.5rem;
     border: 0.8px solid var(--color-primary-variant);
     resize: none;
-    color: var(--color-white);
+    color: var(--color-whit);
 }
 
 
 /* Responsiveness for tablets*/
 
 @media screen and (max-width: 1024px) {
-   .contact.contact-container {
+   .wrapper.contact-container {
         grid-template-columns: 1fr;
         gap: 2rem;
    }

@@ -1,0 +1,22 @@
+import React from 'react'
+
+import Home from '../Components/Home/Home'
+import Featured from '../Components/Featured/Featured'
+import About from '../Components/About/About'
+import Contact from '../Components/Contact/Contact'
+
+
+
+
+const Mainpage = () => {
+  return (
+    <>      
+      <Home />
+      <Featured />
+      <About />      
+      <Contact />      
+    </>
+  )
+}
+
+export default Mainpage
