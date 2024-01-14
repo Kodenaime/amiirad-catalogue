@@ -53,8 +53,18 @@ const Products = () => {
                             <i className='bx bx-shopping-bag'></i>
                         </button>
                     </article>
+                    <article className="products__card">
+                        <img src={dress4bg} alt="" className="products__img" />
 
-                    {/* <article className="products__card">
+                        <h3 className="products__title">Kimono & piece</h3>
+                        <span className="products__price">$650</span>
+
+                        <button className="products__button">
+                            <i className='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article className="products__card">
                         <img src={dress4bg} alt="" className="products__img" />
 
                         <h3 className="products__title">2 Piece</h3>
@@ -63,7 +73,7 @@ const Products = () => {
                         <button className="products__button">
                             <i className='bx bx-shopping-bag'></i>
                         </button>
-                    </article> */}
+                    </article>
                 </div>
             </section>
   )

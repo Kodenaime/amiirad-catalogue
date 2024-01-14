@@ -26,10 +26,12 @@
   .products__title {
     text-transform: uppercase;
     margin-bottom: var(--mb-0-5);
+    font-weight: bolder;
+    color: var(--first-color);
   }
   
   .products__price {
-    color: var(--first-color);
+    color: var(--color-gold);
   }
   
   .products__button {
@@ -50,3 +52,65 @@
   .products__card:hover {
     box-shadow: 0 8px 32px hsla(0, 0%, 10%, .1);
   }
+
+
+
+
+  /*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+ 
+  .products__container {
+    grid-template-columns: repeat(1, 180px);
+    justify-content: center;
+  }
+}
+
+
+
+@media screen and (min-width: 767px) {
+  .section {
+    padding: 8rem 0 1rem;
+  }
+
+
+  .products__container {
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  .products__card {
+    padding: 2rem 0;
+  }
+  .products__img {
+    height: 155px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .section__title {
+    font-size: var(--h2-font-size);
+  }
+
+  .products__container,
+  .new__container {
+    padding-top: 2rem;
+  }
+
+  
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+}

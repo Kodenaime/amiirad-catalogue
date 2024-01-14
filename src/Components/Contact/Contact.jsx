@@ -13,7 +13,7 @@ const Contact = () => {
     const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_6436wtt', 'template_03g5tg6', form.current, 'ixOpuARCs9lBJOb0F')
+    emailjs.sendForm('service_mhf3d43', 'template_m9b2ozg', form.current, 'I_BDyGdsGPfHV4IZV')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -26,7 +26,7 @@ const Contact = () => {
 
 
   return (
-    <section id="contact">
+    <section className='section' id="contact">
       {/* <h5>get in touch</h5> */}
       <h2 className='section__title'>Contact</h2>
 
@@ -49,16 +49,17 @@ const Contact = () => {
             <FaSquareWhatsapp className='contact-icon'/>
             <h4>Whatsapp</h4>
             <h5>Amirad Fashion</h5>
-            <a href="https://api.whatsapp.com/send?phone=+09032198831" target='_blank' rel="noreferrer">Send a messge</a>
+            <a href="https://wa.me/+2349032198831?text=I'm%20interested%20in%20your%20dresses%20for%20purchase
+            " target='_blank' rel="noreferrer">Send a messge</a>
           </article>
         </div>
         
         <div className="container-right">
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name='name' placeholder='Your Full name' required />
+            <input type="text" name='name' placeholder='Full name' required />
             <input type="email" name='email' placeholder='Your email' required />
             <textarea name="message" rows="10" placeholder='Your message' required></textarea>
-            <button type='submit' className='btn btn-primary'>Send</button>
+            <button type='submit' className='form-btn'>Send</button>
           </form>
         </div>
 

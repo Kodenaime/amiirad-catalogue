@@ -17,6 +17,7 @@
     --button-color-light: hsl(0,0%,21%);
     --container-color: #f7f9f7;
     --color-gold: rgb(192, 152, 57);
+    --color-gold-variant: #D5BF86;
     --border-color: hsl(0,0%,94%);
     --color-text: hsl(0,0%,35%);
     --color-title: hsl(0,0%,15%);
@@ -100,6 +101,10 @@ body {
   padding: 1rem 1.5rem;
 }
 
+.button--small:hover {
+  color: var(--color-gold);
+}
+
 
 .wrapper {
     width: var(--container-width-lg);
@@ -107,43 +112,7 @@ body {
     margin-inline: auto;
 }
 
-/* 
-.btn {
-    width: max-content;
-    display: inline-block;
-    color: var(--color-gold);
-    padding: 0.8rem 1.2rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
-}
-
-.btn:hover {
-    background: transparent;
-    color: var(--color-primary);
-    border: transparent;
-    transform: scale(1.1);
-}
-
-.btn-primary {
-    background: var(--color-purple);
-    color: var(--color-black);
-    padding: 0.7rem 1rem;
-    border-radius: 0.4rem;
-    
-}
-
-.button {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    display: inline-flex;
-    align-items: center;
-    column-gap: 0.5rem;
-} */
-
-
-  
+ 
 
 @media screen and (min-width: 968px) {
   :root {
@@ -291,6 +260,10 @@ body.dark-theme {
   height: 1px;
   background-color: var(--first-color);
 }
+
+
+
+
 
 
 
@@ -457,7 +430,22 @@ body.dark-theme {
     font-size: var(--h2-font-size);
   }
 
-  
+  .home__container {
+    column-gap: 2rem;
+  }
+  .home__img-bg {
+    width: 480px;
+    height: 680px;
+  }
+  .home__img {
+    width: 420px;
+  }
+  .home__social {
+    left: -6rem;
+  }
+  .home__data {
+    padding: 0 0 8rem 6rem;
+  }
 
   .featured__container {
     grid-template-columns: repeat(3, 312px);
@@ -499,7 +487,7 @@ body.dark-theme {
   }
   
   .story__container,
-  .testimonial__container, .contact-container {
+  .testimonial__container {
     column-gap: 13rem;
   }
 

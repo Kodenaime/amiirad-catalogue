@@ -1,52 +1,13 @@
 import React from 'react'
 import './featured.css'
 import image6bg from '../../Assets/image6bg.png';
-import { FaCircleArrowRight } from "react-icons/fa6";
+
 
 
 
 const Featured = () => {
   return (
-      // <section classNameName="new section" id="new">
-      //   <h2 classNameName="section-title">
-      //     New Categories
-      //   </h2>
-
-      //   <div classNameName="new-container conatainer grid">
-      //     <article classNameName='new-card'>
-      //         <img src={dress6bg} alt="An image of a dress" classNameName='new-img'/>
-
-      //         <a href="#catalogue" classNameName='new-link'>
-      //           <h2 classNameName='new-title'>
-      //             Gowns
-      //           </h2>
-      //           <FaCircleArrowRight classNameName='new-icon' />
-      //         </a>
-      //     </article>
-      //     <article classNameName='new-card'>
-      //         <img src={dress6bg} alt="An image of a dress" classNameName='new-img'/>
-
-      //         <a href="#catalogue" classNameName='new-link'>
-      //           <h2 classNameName='new-title'>
-      //             Two piece
-      //           </h2>
-      //           <FaCircleArrowRight classNameName='new-icon' />
-      //         </a>
-      //     </article>
-      //     <article classNameName='new-card'>
-      //         <img src={dress6bg} alt="An image of a dress" classNameName='new-img'/>
-
-      //         <a href="#catalogue" classNameName='new-link'>
-      //           <h2 classNameName='new-title'>
-      //             Two piece & Kimono
-      //           </h2>
-      //           <FaCircleArrowRight classNameName='new-icon' />
-      //         </a>
-      //     </article>
-          
-      //   </div>
-
-      // </section>
+     
 
       <section className="featured section container" id="featured">
                 <h2 className="section__title">
