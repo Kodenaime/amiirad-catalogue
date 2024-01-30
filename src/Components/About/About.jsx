@@ -5,7 +5,7 @@ import about from '../../Assets/about.webp'
 const About = () => {
   return (
     <section className="story section container">
-                <div className="story__container grid">
+                <div className="story__container grid" id='contact'>
                     <div className="story__data">
                         <h2 className="section__title story__section-title">
                             About Us

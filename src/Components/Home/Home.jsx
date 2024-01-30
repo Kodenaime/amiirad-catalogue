@@ -56,7 +56,7 @@ const Home = () => {
             Latest arrival of the new dresses, 
             with a modern and exquisite design.
         </p>
-        <span className="home__price">$1245</span>
+        <span className="home__price">This Amiirad</span>
 
         <div className="home__btns">
             <a href="#contact" className="button button--gray button--small">

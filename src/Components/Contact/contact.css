@@ -20,8 +20,8 @@
 }
 
 article.contact {
-    background: rgb(231, 204, 140, 0.5);
-    border: 1px solid var(--first-color);
+    background: var(--bg-color);
+    border: 0.3px solid var(--first-color);
     transition: var(--transition);
     margin-bottom: 0.5rem;
 }
@@ -54,12 +54,13 @@ article.contact:hover {
     cursor: pointer;
     background: var(--first-color);
     transition: var(--transition);
+    border: 1px solid transparent;
 }
 
 .form-btn:hover {
     background: transparent;
     color: var(--color-primary);
-    border: var(--color-gold);
+    border-color: var(--color-gold);
     transform: scale(1.1);
 }
 
@@ -67,10 +68,10 @@ article.contact:hover {
     margin-right: 5rem;
     margin-left: -3rem;
     padding: 1.3rem;
-    background: rgb(231, 204, 140, 0.5);
+    background: var(--bg-color);
     border-radius: 0.5rem;
     width: 100%;
-    border: 1px solid var(--first-color);
+    border: 0.1px solid var(--first-color);
 }
 
 form {

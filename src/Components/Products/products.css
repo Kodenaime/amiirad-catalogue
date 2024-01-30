@@ -79,7 +79,7 @@
 
 
   .products__container {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(4, 200px);
     justify-content: center;
     gap: 2.5rem;
   }

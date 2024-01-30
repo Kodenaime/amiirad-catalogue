@@ -1,9 +1,10 @@
 import React from 'react'
 // import { Link, NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import './navbar.css'
 import logopurple from '../../Assets/logopurple.png'
 import { FaBarsStaggered } from "react-icons/fa6";
+import { FaRegWindowClose } from "react-icons/fa";
 
 // import {AiOutlineHome} from 'react-icons/ai'
 // import {AiOutlineUser} from 'react-icons/ai'
@@ -15,6 +16,12 @@ import { FaBarsStaggered } from "react-icons/fa6";
 
 
 const Navbar = () => {
+
+    const navRef = useRef();
+
+    const showNavbar = () => {
+         navRef.current.classList.toggle('responsive_nav');
+     }
 
   const [activeNav, setActiveNav] = useState('#');      
 
@@ -49,47 +56,64 @@ const Navbar = () => {
     // </header>    
 
 
-    <header className="header" id="header">
-            <nav className="nav container">
-                <a href='/' className="nav__logo">
-                    <img src={logopurple} width='45rem' height='45rem'  alt="Logo for the website" /> 
-                </a>
+    // <header className="header" id="header">
+    //         <nav className="nav container">
+    //             <a href='/' className="nav__logo">
+    //                 <img src={logopurple} width='45rem' height='45rem'  alt="Logo for the website" /> 
+    //             </a>
 
-                <div className="nav__menu" id="nav-menu">
-                    <ul className="nav__list">
-                        <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">Home</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#featured" className="nav__link">Featured</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#products" className="nav__link">Products</a>
-                        </li>
-                        <li className="nav__item">
-                            <a href="#new" className="nav__link">New</a>
-                        </li>
-                    </ul>
+    //             <div ref={navRef}className="nav__menu" id="nav-menu">
+    //                 <ul className="nav__list">
+    //                     <li className="nav__item">
+    //                         <a href="#home" className="nav__link active-link">Home</a>
+    //                     </li>
+    //                     <li className="nav__item">
+    //                         <a href="#featured" className="nav__link">Featured</a>
+    //                     </li>
+    //                     <li className="nav__item">
+    //                         <a href="#products" className="nav__link">Products</a>
+    //                     </li>
+    //                     <li className="nav__item">
+    //                         <a href="#new" className="nav__link">New</a>
+    //                     </li>
+    //                 </ul>
 
-                    <div className="nav__close" id="nav-close">
-                        <i className='bx bx-x' ></i>
-                    </div>
-                </div>
+    //                 <div onClick={showNavbar} className="nav__close" id="nav-close">
+    //                     <FaRegWindowClose />
+    //                 </div>
+    //             </div>
 
-                <div className="nav__btns">
-                    
-                    <i className='bx bx-moon change-theme' id="theme-button"></i>
-{/* 
-                    <div className="nav__shop" id="cart-shop">
-                        <i className='bx bx-shopping-bag' ></i>
-                    </div> */}
+    //             <div className="nav__btns">              
 
-                    <div className="nav__toggle" id="nav-toggle">
-                        <FaBarsStaggered id='menu-bar'/> 
-                    </div>
-                </div>
-            </nav>
-        </header>
+    //                 <div className="nav__toggle" id="nav-toggle">
+    //                     <FaBarsStaggered id='menu-bar'/> 
+    //                 </div>
+    //             </div>
+    //         </nav>
+    //     </header>
+
+    <header>
+			<a href='/' className="nav__logo">
+                     <img src={logopurple} width='45rem' height='45rem'  alt="Logo for the website" /> 
+            </a>
+			<nav ref={navRef}>
+				<a href="#">Home</a>
+				<a href="#about">About</a>
+				<a href="#featured">Featured</a>
+				<a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaRegWindowClose />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBarsStaggered />
+			</button>
+		</header>
 
 
   )

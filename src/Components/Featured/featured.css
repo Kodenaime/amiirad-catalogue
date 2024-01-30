@@ -55,6 +55,7 @@
 
   .featured__button:hover {
     color: var(--color-gold);
+    border: 1.3px solid var(--first-color);
   }
   
   .featured__card:hover {
