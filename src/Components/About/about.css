@@ -75,10 +75,12 @@
     right: 0;
     bottom: 0;
     transition: .3s;
+    border: 1px solid transparent;
   }
   
   .products__button:hover {
     background-color: var(--button-color-alt);
+    border-color: var(--color-gold);
   }
   
   .products__card:hover {

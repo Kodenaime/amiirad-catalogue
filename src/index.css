@@ -100,10 +100,12 @@ body {
 
 .button--small {
   padding: 1rem 1.5rem;
+  border: 1px solid transparent;
 }
 
 .button--small:hover {
   color: var(--color-gold);
+  border-color: var(--color-gold);
 }
 
 

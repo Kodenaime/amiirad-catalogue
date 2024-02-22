@@ -29,6 +29,20 @@
     font-weight: bolder;
     color: var(--first-color);
   }
+
+  .btn {
+    padding: 1rem;
+    background: var(--button-color);
+    border: 1px solid transparent;
+    width: 100%;
+    color: var(--container-color);
+  }
+
+  .btn:hover {
+    border-color: var(--first-color);
+    color: var(--color-gold);
+    background: transparent;
+  }
   
   .products__price {
     color: var(--color-gold);

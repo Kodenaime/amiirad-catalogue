@@ -180,7 +180,7 @@ const Products = () => {
                   </article>
               )
           })
-        } <button onClick={showMoreItems}>View More</button> 
+        } <button className='btn' onClick={showMoreItems}>View More</button> 
 
        
                 </div>
