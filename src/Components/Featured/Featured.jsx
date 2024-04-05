@@ -1,7 +1,9 @@
 import React from 'react'
 import './featured.css'
-import image6bg from '../../Assets/image6bg.png';
 
+import image4 from '../../Assets/image4.png'
+import image5 from '../../Assets/image5.png'
+import image6 from '../../Assets/image6.png'
 
 
 
@@ -18,7 +20,7 @@ const Featured = () => {
                     <article className="featured__card">
                         <span className="featured__tag">Checkout</span>
 
-                        <img src={image6bg} alt="" className="featured__img" />
+                        <img src={image4} alt="" className="featured__img" />
 
                         <div className="featured__data">
                             <h3 className="featured__title">Jazzmaster</h3>
@@ -31,7 +33,7 @@ const Featured = () => {
                     <article className="featured__card">
                         <span className="featured__tag">Checkout</span>
 
-                        <img src={image6bg} alt="" className="featured__img" />
+                        <img src={image5} alt="" className="featured__img" />
 
                         <div className="featured__data">
                             <h3 className="featured__title">Ingersoll</h3>
@@ -44,7 +46,7 @@ const Featured = () => {
                     <article className="featured__card">
                         <span className="featured__tag">Checkout</span>
 
-                        <img src={image6bg} alt="" className="featured__img" />
+                        <img src={image6} alt="" className="featured__img" />
 
                         <div className="featured__data">
                             <h3 className="featured__title">Rose gold</h3>

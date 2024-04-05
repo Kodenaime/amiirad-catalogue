@@ -1,5 +1,6 @@
 {
   "name": "amiirad-catalogue",
+  "homepage": "http://amirad.fashion.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -11,13 +11,16 @@ const About = () => {
                             About Us
                         </h2>
     
-                        <h1 className="story__title">
-                            Inspirational dresses of <br /> this year
-                        </h1>
-    
                         <p className="story__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nam, quaerat. Magni libero nostrum quaerat exercitationem sit, id nulla qui maxime!
+                            "At Amiirad, we strive to lead the way in traditional-inspired fashion, fostering elegance, dignity, and a commitment to positive social values 
+                        </p>
+                        <p className="story__description">
+                            <b>Mission Statement:</b>
+                            "Empowering women to embrace their inherent beauty and dignity through the fusion of traditional styles with contemporary designs."
+                        </p>
+                        <p className="story__description">
+                             <b>Vision Statement:</b>
+                            "Our vision is to revolutionize the fashion industry by celebrating beauty, decency, and authenticity in every garment we create."
                         </p>
     
                         <a href="#products" className="button button--small">Discover</a>

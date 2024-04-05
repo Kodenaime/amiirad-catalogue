@@ -22,36 +22,36 @@ const Footer = () => {
 
                     <ul className="footer__links">
                         <li>
-                            <a href="#" className="footer__link">Funyin</a>
+                            <a href="#" className="footer__link">Amiirad</a>
                         </li>
                         <li>
-                            <a href="#" className="footer__link">Customer Support</a>
+                            <a href="#contact" className="footer__link">Contact Us</a>
                         </li>
                         <li>
                             <a href="#about" className="footer__link">About Us</a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="#" className="footer__link">Copy Right</a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 
                 <div className="footer__content">
-                    <h3 className="footer__title">Product</h3>
+                    <h3 className="footer__title">Products</h3>
 
                     <ul className="footer__links">
                         <li>
-                            <a href="#" className="footer__link">Road bikes</a>
+                            <a href="#products" className="footer__link">Jump Suits</a>
                         </li>
                         <li>
-                            <a href="#" className="footer__link">Mountain bikes</a>
+                            <a href="#products" className="footer__link">Flower Gowns</a>
                         </li>
                         <li>
-                            <a href="#" className="footer__link">Electric</a>
+                            <a href="#products" className="footer__link">Two Piece</a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="#" className="footer__link">Accesories</a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 
@@ -59,15 +59,15 @@ const Footer = () => {
                     <h3 className="footer__title">Social</h3>
 
                     <ul className="footer__social">
-                        <a href="https://www.facebook.com/" target="_blank" className="footer__social-link">
+                        <a href="https://www.instagram.com/amiirad.fashion?igsh=MTRtazN5YjhhMGdhNg==" target="_blank" className="footer__social-link">
                             <FaSquareFacebook />
                         </a>
 
-                        <a href="https://twitter.com/" target="_blank" className="footer__social-link">
+                        {/* <a href="https://twitter.com/" target="_blank" className="footer__social-link">
                             <FaSquareXTwitter />
-                        </a>
+                        </a> */}
 
-                        <a href="https://www.instagram.com/" target="_blank" className="footer__social-link">
+                        <a href="https://www.instagram.com/amiirad.fashion?igsh=MTRtazN5YjhhMGdhNg==" target="_blank" className="footer__social-link">
                             <FaSquareInstagram />
                         </a>
                     </ul>
