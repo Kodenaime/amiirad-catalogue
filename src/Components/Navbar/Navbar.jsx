@@ -51,7 +51,7 @@ const Navbar = () => {
 				onClick={showNavbar}>
 				<FaBarsStaggered />
 			</button>
-		</header>
+	</header>
 
 
   )
